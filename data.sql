@@ -11,3 +11,26 @@ INSERT INTO animals VALUES (8, 'Angemon', '12-06-2005', 1, true, -45);
 INSERT INTO animals VALUES (9, 'Boarmon', '07-06-2005', 7, true, 20.4);
 INSERT INTO animals VALUES (10, 'Blossom', '1998-10-13', 3, true, 17);
 INSERT INTO animals VALUES (11, 'Ditto', '2022-05-14', 4, true, 22);
+
+-- Insert the following data into the owners table: 
+INSERT INTO owners (full_name, age)
+VALUES ('Sam Smith', 34),
+('Jennifer Orwell', 19),
+('Bob', 45),
+('Melody Pond', 77),
+('Dean Winchester', 14),
+('Jodie Whittaker', 38);
+
+-- Insert the following data into the species table:
+INSERT INTO species (name)
+VALUES ('Pokemon'),
+('Digimon');
+
+-- Modify your inserted animals so it includes the species_id value:
+UPDATE animals SET species_id = 2 WHERE name LIKE '%mon';
+UPDATE animals SET species_id = 1 WHERE name NOT LIKE '%mon';
+
+-- Modify your inserted animals to include owner information (owner_id): 
+UPDATE animals SET owner_id = 1 WHERE name = 'Agumon';
+
+UPDATE animals SET owner_id = 2 WHERE name = 'Gabumon' OR name = 'Pikachu';

@@ -39,3 +39,36 @@ ADD CONSTRAINT animeSpecie FOREIGN KEY (species_id) REFERENCES species(id);
 -- Add Owners_id
 ALTER TABLE animals
 ADD CONSTRAINT animeOwners FOREIGN KEY (owners_id) REFERENCES  owners(id);
+
+-- Create vets table
+CREATE TABLE vets (
+    id serial PRIMARY KEY,
+    name text,
+    age int,
+    date_of_graduation date
+);
+
+-- Create specialization & Alter db
+CREATE TABLE specializations (
+	species_id integer,
+	vets_id integer
+);
+
+ALTER TABLE specializations 
+ADD CONSTRAINT specials1 FOREIGN KEY (species_id) REFERENCES species(id);
+
+ALTER TABLE specializations 
+ADD CONSTRAINT specials2 FOREIGN KEY (vets_id) REFERENCES vets(id);
+
+CREATE TABLE visits
+(
+	animals_id integer,
+	vets_id integer,
+	date_of_visit date
+);
+
+ALTER TABLE visits 
+ADD CONSTRAINT visits1 FOREIGN KEY (animals_id) REFERENCES animals(id);
+
+ALTER TABLE visits 
+ADD CONSTRAINT visits2 FOREIGN KEY (vets_id) REFERENCES vets(id);

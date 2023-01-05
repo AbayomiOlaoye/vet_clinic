@@ -138,11 +138,13 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Olaoye Abayomi**
 
-- GitHub: [@AbayomiOlaoye](https://github.com/AbayomiOlaoye)
-- Twitter: [@Olaoyeelijah](https://twitter.com/olaoyeelijah)
-- LinkedIn: [Oluwatoyin Olaoye](https://linkedin.com/in/oluwatoyinolaoye)
+[@GitHub](https://github.com/AbayomiOlaoye) | [@Twitter](https://twitter.com/olaoyeelijah) | [LinkedIn](https://linkedin.com/in/oluwatoyinolaoye)
+
+👤 **Chukwuma Paul Mosanya**
+
+[GitHub](https://github.com/blase147) | [Twitter](https://twitter.com/ChukwumaMosanya) | [LinkedIn](https://www.linkedin.com/in/chukwuma-mosanya)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
